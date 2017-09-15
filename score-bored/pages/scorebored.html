@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScoreBored</title>
+
+						<!-- connect external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../css/home-styles.css">
+
+						<!-- font awesome icons -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+							<!-- fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Averia+Libre:700|Source+Sans+Pro:400i" rel="stylesheet">
+	<link href="fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+							<!-- jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+							<!-- navbar -->
+<nav>
+	<ul>
+	   	<li><a href="#"><i class="fa fa-home fa-2x fonts icon1" title="home"></i></a></li>
+	   	<li><a href="about.html"><i class="fa fa-money fa-2x fonts icon2" title="prizes"></i></a></li>
+  		<li><a href="stats.html"><i class="fa fa-bar-chart fa-2x fonts icon3" title="scores"></i></a></li>
+  		<li><a href="players.html"><i class="fa fa-users fa-2x fonts icon4" title="players in the race"></i></a></li>
+  		<li><a href="submit.html"><i class="fa fa-plus-circle fa-2x fonts icon5" title="submit scores"></i></a></li>
+	</ul>
+</nav>
+
+		<!-- title heading -->
+<div id="text1">
+<h1>Score<span>Bored</span></h1>
+</div>
+
+		<!-- slidehsow -->
+<div class="slide-container">	
+	<img class="slide-images" width="560" height="500" src="../images/des2.png">
+	<img class="slide-images" width="560" height="500" src="../images/des3.jpg">
+	<img class="slide-images" width="560" height="500" src="../images/des4.jpg">
+</div>
+
+		<!-- newsfeed -->
+<div id="news">
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+		Scores for infinite warfare are now up and running
+		
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+			Scores for infinite warfare are now up and running
+
+	</div>
+	<div class="feed">
+	<p><span>08/12/17</span></p>
+			Scores for infinite warfare are now up and running
+
+	</div>
+			<!-- end of newsfeed -->
+</div>
+
+			<!-- script for slideshow -->
+<script>
+
+//initialize index to 0
+var index = 0;
+
+	//start of carousel function
+	function firstSlide(){
+
+		//initialize i to 0
+		var i = 0;
+
+		//get all elements with the same class and set to a holder
+		var imgs = $(".slide-images");
+
+		//while i is less than the length of imgs
+		while(i < imgs.length){
+
+			//hide rest of images
+			imgs[i].style.display = "none";
+
+			//increment i
+			i++;
+		}
+
+		//increment index
+		index++;
+
+		//if index is less than the length of imgs
+		if (index > imgs.length) 
+		{
+			//set index to 1
+			index = 1;
+		}
+
+		//display image in position
+		imgs[index-1].style.display = "block";
+
+		//make the slideshow move to the next img every second
+	    setTimeout(firstSlide, 2000);
+	}
+
+//call to function
+firstSlide();
+
+</script>
+</body>
+</html>

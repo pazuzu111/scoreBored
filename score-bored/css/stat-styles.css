@@ -1,0 +1,88 @@
+*{
+	margin:0;
+}
+
+body{
+	background-color: black;
+}
+
+		/* navbar */
+nav{
+	height: 100%;
+	width: 80px;
+	background-color: black;
+	position: fixed;
+	text-align: center;
+	padding-top: 65px;
+}
+
+ul{
+	display: inline;
+}
+
+li{
+	padding-top: 100%;
+}
+
+		/* navbar icons */
+
+.icon1{
+	color: red;
+}
+
+.icon2{
+	color: lime;
+}
+
+.icon3{
+	color: navy;
+}
+
+.icon4{
+	color: crimson;
+}
+
+.icon5{
+	color: silver;
+}
+
+.fonts:hover{
+	opacity: .3;
+}
+
+/**************************************/
+
+#stats{
+	margin-left: 80px;
+	background:url("../images/destiny.jpg");
+	background-size: cover;
+	filter: brightness(1.3);
+	padding: 100px;
+}
+
+#stats-container{
+	background-color: rgba(0,0,0,.7);
+	height: 573px;
+	text-align: center;
+	color: gold;
+	padding-top: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+	font-size: 20px;
+	font-family: 'Averia Libre', cursive;
+}
+
+#player-container{
+	height: 300px;
+	background-color: rgba(0,0,0,.9);
+	overflow: auto;
+	margin-top: 55px;
+}
+.stats-players{
+	font-family: 'Play', sans-serif;
+	font-size: 20px;
+	color: green;
+	letter-spacing:3px;
+	border-bottom: .3px groove navy;
+	padding-bottom: 10px;
+}

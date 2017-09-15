@@ -1,0 +1,57 @@
+*{
+	margin:0;
+}
+
+body{
+	background-color: black;
+}
+
+#bg {
+	background:url("../images/pin1.jpg");
+	background-size: cover;
+	filter: blur(20px);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#censorBox{
+	margin: auto;
+    width: 40%;
+    background-color: rgba(0,0,0,.7);
+    color:red;
+    font-family: 'source sans pro';
+    font-size: 30px;
+    text-align:center;
+    margin-top: 20%;
+    padding: 40px;
+}
+
+button{
+	padding: 10px;
+	background-color: rgba(0,0,0,.3);
+	color: white;
+	border:.5px groove white;
+	font-size: 20px;
+	border-radius: 5px;
+	outline: none;
+}
+
+button:hover{
+	padding: 10px;
+	background-color: rgba(255,255,255,.5);
+	color: black;
+	border:.5px groove black;
+	font-size: 20px;
+	border-radius: 5px;
+	outline: none;
+}
+
+
+
+
+
+

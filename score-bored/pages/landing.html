@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Censor!</title>
+
+							<!-- connect external stylesheet -->
+	<link rel="stylesheet" type="text/css" href="../css/censor-styles.css">
+
+							<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Averia+Libre:700|Source+Sans+Pro:400i" rel="stylesheet">
+
+							<!-- jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+		<!-- background image -->
+<div id="bg"></div>
+		
+		<!-- censor question --> 
+<div id="censorBox">
+	<h1>are you 18 or older?</h1>
+
+	<button id="enter">yes</button>
+	<button id="no">no!</button>
+</div>
+
+<!-- script to connect buttons to events-->
+<script>
+
+//when the buttons with these id's are clicked
+$('#enter, #no').click(function () {
+
+	//if the yes button is clicked
+	if (this.id == 'enter') 
+	{
+		//send alert
+		alert('welcome!');
+
+		//redirect to home
+		window.location.href = 'scorebored.html';
+    }
+	else if (this.id == 'no') 
+	{
+		//send alert
+		alert('you are not old enough!!!');
+
+		//change the css of id=bg
+		$("#bg").css({'filter':'blur(0)',});
+
+		//send another alert	
+		alert('leave now!');
+	}
+});
+</script>
+	<!-- end of script-->
+</body>
+</html>
